@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://of5pievklq4m"]
+
+[ext_resource type="Script" uid="uid://bclnbjul46dx2" path="res://path.gd" id="1_1dods"]
+
+[sub_resource type="Curve2D" id="Curve2D_sqppf"]
+
+[node name="Path" type="Path2D"]
+curve = SubResource("Curve2D_sqppf")
+script = ExtResource("1_1dods")
