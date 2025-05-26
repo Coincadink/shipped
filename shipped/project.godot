@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="Shipped"
+run/main_scene="uid://vgq7sqjtjhbo"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="Shipped"
+
+[physics]
+
+2d/default_gravity=0.0

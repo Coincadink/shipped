@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgckb5f60kyh2"]
+
+[ext_resource type="Script" uid="uid://b0aqeb3hacj5t" path="res://scripts/ship.gd" id="1_2gnfn"]
+[ext_resource type="Texture2D" uid="uid://dllnarbjfh8uf" path="res://assets/kenney_simple-space/PNG/Default/ship_sidesA.png" id="1_q631a"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2gnfn"]
+radius = 21.2132
+
+[node name="Ship" type="RigidBody2D"]
+script = ExtResource("1_2gnfn")
+
+[node name="ShipSidesA" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+texture = ExtResource("1_q631a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_2gnfn")
