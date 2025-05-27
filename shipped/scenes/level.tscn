@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://vgq7sqjtjhbo"]
+[gd_scene load_steps=4 format=3 uid="uid://vgq7sqjtjhbo"]
 
 [ext_resource type="PackedScene" uid="uid://btkd81jbwm0ef" path="res://scenes/planet.tscn" id="1_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://ceonesrxkysaf" path="res://scenes/target_zone.tscn" id="3_mx8sn"]
 [ext_resource type="Script" uid="uid://4k8fn66y5j3o" path="res://scripts/ship_spawner.gd" id="3_w8frs"]
 
 [node name="Level" type="Node2D"]
@@ -8,10 +9,10 @@
 [node name="ShipSpawner" type="Node2D" parent="."]
 script = ExtResource("3_w8frs")
 
-[node name="Planet" parent="." instance=ExtResource("1_w7c3h")]
-position = Vector2(220, 414)
-scale = Vector2(0.12, 0.12)
+[node name="TargetZone" parent="." instance=ExtResource("3_mx8sn")]
+position = Vector2(627, 502)
+rotation = -0.353419
 
-[node name="Planet2" parent="." instance=ExtResource("1_w7c3h")]
-position = Vector2(935, 192)
-scale = Vector2(0.12, 0.12)
+[node name="Planet" parent="." instance=ExtResource("1_w7c3h")]
+position = Vector2(301, 609)
+scale = Vector2(0.68, 0.68)

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceonesrxkysaf"]
+
+[ext_resource type="Script" uid="uid://bbxqfyuayg3b0" path="res://scripts/target_zone.gd" id="1_mkqpx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jrf74"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkqpx"]
+
+[node name="TargetZone" type="Area2D"]
+collision_mask = 4
+script = ExtResource("1_mkqpx")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+scale = Vector2(63.12, 63.12)
+mesh = SubResource("BoxMesh_jrf74")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3.156, 3.156)
+shape = SubResource("RectangleShape2D_mkqpx")
