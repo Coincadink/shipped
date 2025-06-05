@@ -3,14 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://c50yvj8x2unre" path="res://assets/kenney_planets/Planets/planet01.png" id="1_cktii"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wsaxd"]
-radius = 515.048
+radius = 500.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cktii"]
-radius = 3552.67
+radius = 10000.0
 
 [node name="Planet" type="StaticBody2D"]
 
 [node name="Planet01" type="Sprite2D" parent="."]
+scale = Vector2(0.970312, 0.970312)
 texture = ExtResource("1_cktii")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -19,7 +20,8 @@ shape = SubResource("CircleShape2D_wsaxd")
 [node name="Area2D" type="Area2D" parent="."]
 gravity_space_override = 1
 gravity_point = true
+gravity_point_unit_distance = 450.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_cktii")
-debug_color = Color(0, 0.6, 0.701961, 0.0705882)
+debug_color = Color(0, 0.6, 0.701961, 0)
